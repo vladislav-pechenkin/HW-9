@@ -31,13 +31,12 @@ public class Main {
         System.out.println("Задача № 3");
 
         int[] theAmountIsWeekly = {9050, 7800, 8360, 6800, 9840};
-        double expenses = 0;
-        double expenses1 = 0;
+        double averageExpenses = 0;
+        double numberOfArrayElements = 5;
         for (int i = 0; i < theAmountIsWeekly.length; i++) {
-            expenses += theAmountIsWeekly[i];
-            expenses1 = expenses / theAmountIsWeekly.length;
+            averageExpenses += theAmountIsWeekly[i] / numberOfArrayElements;
         }
-        System.out.println("Средняя сумма трат за месяц составила " + expenses1 + " рублей.");
+        System.out.println("Средняя сумма трат за месяц составила " + averageExpenses + " рублей.");
 
         System.out.println();
         System.out.println("Задача № 4");
